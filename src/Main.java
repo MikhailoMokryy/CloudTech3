@@ -2,8 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.printf("Hello %s!","world");
-        
+        Runnable hello_world = () ->  System.out.printf("Hello %s!","world");
+        hello_world.run();
+
     }
+
 
 }
